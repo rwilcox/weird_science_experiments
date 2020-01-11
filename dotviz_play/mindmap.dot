@@ -1,0 +1,43 @@
+graph LearningDotViz {
+// graph = non-directional (-- is allowed)
+// digraph = directional (must(?) use <- or ->)
+
+  rankdir=LR
+  // flip thing on it's side
+
+  "speed of creating diagrams" -- 
+  UL -- 
+  EU --
+  "speed of creating diagrams" -- "setup on all OSes I use" -- callout
+
+  EU -- { 
+    "does the yntax get out of my way?" 
+    "live peview tools so I can still think graphically"
+     }
+  EU -- "how can I refactor when something gets repetative?" -- { 
+    "curly braces for multiple siblings at a time"
+    "extract node information to a standalone declaration, then find/replace in your editor"
+  }
+  
+  EU -- "how easy is it to refactor whole graph?"
+
+  "how easy is it to refactor whole graph" -- "changing arrow types" -- "use digraph instead of graph"
+  "how easy is it to refactor whole graph" -- making
+  UL --
+  AB --
+  "repeat" --
+  AB
+
+  callout [shape="box" label="Windows!"]
+
+  "AB" [label="pete"];
+  "UL" [label="understanding the language"]
+  EU [label="ease of use"]
+  // we refactored the commonly used label to
+  // have a short name
+  // it did mean we had to take it out of the DAG
+  
+// "BOM" -- "olb release manifest generator"
+// "BOM" -- "FOD audit"
+// "FOD audit"[xlabel="hello world" pad=1]
+}
