@@ -1,12 +1,12 @@
 #lang scribble/text
 
-@(define (quote-highlight body
+@(define (quote-highlight 
                           #:title title
                           #:is-boot? [is-book? 'f]
                           #:author author
                           #:page-number page-num
                           #:url [url ""]
-                          ) @list{*@|body|*})
+                          . body ) @list{*@|body|*})
 
  
 
@@ -15,4 +15,7 @@ Hello world @quote-highlight[
  #:author      "Ryan Wilcox"
  #:page-number 42
  #:url         "http://example.com"
- ]{bello world}
+ ]{ 
+ bello
+  world
+}
