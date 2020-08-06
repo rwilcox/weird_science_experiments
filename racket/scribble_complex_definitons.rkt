@@ -1,6 +1,8 @@
 #lang scribble/text
 
-@(define (quote-highlight 
+@(require "scribble-utils.rkt")
+
+@(define (old-quote-highlight 
                           #:title title
                           #:is-boot? [is-book? 'f]
                           #:author author
@@ -10,12 +12,14 @@
 
  
 
-Hello world @quote-highlight[
+My first program is:
+@quote-highlight[
  #:title       "yo"
  #:author      "Ryan Wilcox"
  #:page-number 42
  #:url         "http://example.com"
- ]{ 
- bello
-  world
+ #:is-book?    't
+ ]{
+bello
+world
 }
